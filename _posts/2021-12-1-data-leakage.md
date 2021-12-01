@@ -5,21 +5,15 @@ layout: post
 
 ## Introduction
 
----
-
 Data leakage is one of the most overlooked yet important concepts in Machine Learning. All we want from our model is to score as high as possible on some metric. We although take care of not underfitting/overfitting but things take a turn when deploying the model into production when the model sees a real world data.
 
 Such inconsistency by the model for real world data is explained by data leakage.
 
 ## Data Leakage
 
----
-
 As the name suggests, it the leakage of data from training data to testing data. Test set is used to simulate unseen real world data. But what if training set has already seen the data from the test set? The model will learn that data and the accuracy for the test set will be extremely high as it has already learned the data.
 
 ## Causes
-
----
 
 The main problem is leaking knowledge from the training set to test set. This can be done in various ways -
 
@@ -52,15 +46,11 @@ The main problem is leaking knowledge from the training set to test set. This ca
 
 ## Best practices and Solutions
 
----
-
 The most important practice is to do through research about the problem and the dataset in hand, to reduce Target/Feature leakage. Always make it a habit to first split the data in train-test and then do EDA and feature engineering on the training set.
 
 Use of pipelines and cross-validations is extremely useful when dealing with complex problems and avoiding data leakage. Also one should look out for "too-good-to- be-true" model scores and check data leakage.
 
 ## Conclusion
-
----
 
 Data leakage is one of the most common mistakes and is often not realised untill model is in production and is feed the real world data. It is important to not let test set knowledge leak in the training set. It is in best practice to avoid proxy features, doing splits before EDA and using pipelines and cross-vaidations.
 
