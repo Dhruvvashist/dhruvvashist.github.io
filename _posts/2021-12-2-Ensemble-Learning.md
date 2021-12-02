@@ -26,8 +26,9 @@ Also known as Bootstrap aggregation, Bagging is used to deal with overfitting/hi
 
 This includes 2 main processes -
 
-1. ### Bootstrap - 
+1. ### Bootstrap -
 This is process of making independent models and giving them random data from the original dataset. This is done by sapling with replacement. Each data point has equal probability/weight to get picked for a given model. The models are the trained on these datasets produced for them and give a prediction of their own.
+
 2. ### Aggregation - 
 We now aggregate the prediction given by the independent models into one. This is done by voting. The final prediction given has much less variance and is better than most of the independent models.
 
