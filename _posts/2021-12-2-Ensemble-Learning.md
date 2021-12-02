@@ -24,6 +24,8 @@ To find that sweet spot we 2 techniques depending on model we are dealing with. 
 ---
 Also known as Bootstrap aggregation, Bagging is used to deal with overfitting/high variance in the model. It takes a numerous independent models of homogenous/non- homogenous nature and combines them to give a final prediction.
 
+![Test1](https://user-images.githubusercontent.com/40920724/144393814-83fe1724-6081-4be5-9bf3-8222e2222f9a.png)
+
 This includes 2 main processes -
 
 * ### Bootstrap -
@@ -31,9 +33,6 @@ This is process of making independent models and giving them random data from th
 
 * ### Aggregation - 
 We now aggregate the prediction given by the independent models into one. This is done by voting. The final prediction given has much less variance and is better than most of the independent models.
-
-![Test1](https://user-images.githubusercontent.com/40920724/144393814-83fe1724-6081-4be5-9bf3-8222e2222f9a.png)
-
 
 But why does bagging decrease variance?
 
