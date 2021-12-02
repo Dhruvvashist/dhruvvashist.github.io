@@ -26,8 +26,10 @@ Also known as Bootstrap aggregation, Bagging is used to deal with overfitting/hi
 
 This includes 2 main processes -
 
-1. ### Bootstrap - This is process of making independent models and giving them random data from the original dataset. This is done by sapling with replacement. Each data point has equal probability/weight to get picked for a given model. The models are the trained on these datasets produced for them and give a prediction of their own.
-2. ### Aggregation - We now aggregate the prediction given by the independent models into one. This is done by voting. The final prediction given has much less variance and is better than most of the independent models.
+1. ### Bootstrap - 
+This is process of making independent models and giving them random data from the original dataset. This is done by sapling with replacement. Each data point has equal probability/weight to get picked for a given model. The models are the trained on these datasets produced for them and give a prediction of their own.
+2. ### Aggregation - 
+We now aggregate the prediction given by the independent models into one. This is done by voting. The final prediction given has much less variance and is better than most of the independent models.
 
 But why does bagging decrease variance?
 
@@ -41,7 +43,6 @@ Iteratively sequence of model are trained the final model is more complex than t
 
 ## Conclusion
 ---
-
 * Ensemble learning is combining models to make better and stronger models. Bagging and boosting are 2 techniques used.
 * Bagging takes several independent models and trains them in parallel. It them aggregates the models to give a learner which has low bias as well as low variance. Bagging is    used for model with high variance.
 * Boosting takes several base models and trains them iteratively. The model improves on the weakness of the previous model. These iteration create models that have low             variance    as well as low bias. Boosting is used for model with high bias.
