@@ -18,6 +18,8 @@ Ensemble learning helps us to solve the problem of overfitting and underfitting.
 
 ## Bias and variance
 ---
+2 of the most commonly used terms in ML. Bias is how flexible the model and the complexity of the model. Complex models(Polynomial models) have low bias and are flexible, simple models(linear regression) have high bias and don't generalise. This is problem of underfitting. Variance on the other hand tells us how the model handles new data. Complex models have high variance and give huge errors when seeing new data. This is the problem of overfitting.
+
 ![Test3](https://user-images.githubusercontent.com/40920724/144397457-9fe4cf4c-30b7-4f8f-91b5-616605f7127e.png)
 
 To find that sweet spot we 2 techniques depending on model we are dealing with. We use Bagging when dealing with high variance and Boosting when dealing with high bias.
