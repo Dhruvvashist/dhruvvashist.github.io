@@ -18,6 +18,8 @@ Ensemble learning helps us to solve the problem of overfitting and underfitting.
 
 ## Bias and variance
 ---
+![Test3](https://user-images.githubusercontent.com/40920724/144397457-9fe4cf4c-30b7-4f8f-91b5-616605f7127e.png)
+
 To find that sweet spot we 2 techniques depending on model we are dealing with. We use Bagging when dealing with high variance and Boosting when dealing with high bias.
 
 ## Bagging
