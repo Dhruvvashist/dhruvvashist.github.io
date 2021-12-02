@@ -26,15 +26,21 @@ Also known as Bootstrap aggregation, Bagging is used to deal with overfitting/hi
 
 This includes 2 main processes -
 
-1.  ### Bootstrap -
+* ### Bootstrap -
 This is process of making independent models and giving them random data from the original dataset. This is done by sapling with replacement. Each data point has equal probability/weight to get picked for a given model. The models are the trained on these datasets produced for them and give a prediction of their own.
 
-2.  ### Aggregation - 
+* ### Aggregation - 
 We now aggregate the prediction given by the independent models into one. This is done by voting. The final prediction given has much less variance and is better than most of the independent models.
+
+![Test1](https://user-images.githubusercontent.com/40920724/144393814-83fe1724-6081-4be5-9bf3-8222e2222f9a.png)
+
 
 But why does bagging decrease variance?
 
 Each model is centered around the true density, but is overly complicated (low bias, high variance). By averaging them out, we get a smoothed version of them (low variance), still centered around the true density (low bias).
+
+![Test2](https://user-images.githubusercontent.com/40920724/144393886-321cc305-de4c-45d9-8bb1-63e7d9e792e1.png)
+
 
 ## Boosting
 ---
